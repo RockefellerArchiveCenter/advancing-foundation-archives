@@ -1,0 +1,51 @@
+// TODO: responsive widths
+
+.card-wrapper {
+  display: flex;
+  width: calc(50% - 10px);
+  flex-wrap: wrap;
+}
+
+.card {
+  background: $white;
+  box-sizing: border-box;
+  font-family: $sans-serif-stack;
+  margin-bottom: 20px;
+  padding: 50px;
+  border-radius: 0 0 50px 0;
+}
+
+.card--flex {
+  display: flex;
+}
+
+.card__header {
+  text-transform: none;
+  font-size: 30px;
+  line-height: 40px;
+  margin-top: 0;
+}
+
+.card__text {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.card__link {
+  color: $aqua;
+  font-size: 20px;
+  font-weight: $font-weight-medium;
+  line-height: 32px;
+  text-transform: uppercase;
+  text-decoration: none;
+  &:after {
+    content: '>';
+    margin-left: 10px;
+  }
+}
+
+.card__image {
+  height: 220px;
+  margin-top: -20px;
+  margin-right: 30px;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=#"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <a href="#main" class="skip-link">Jump directly to main content</a>
+
+    {%- include top-nav.html -%}
+
+    {{content}}
+
+    {%- include footer.html -%}
+
+  </body>
+
+  {%- include scripts.html -%}
+
+</html>

@@ -1,0 +1,53 @@
+.report-nav {
+  border-top: 3px solid $purple;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  padding-top: 60px;
+  padding-bottom: 90px;
+}
+
+.report-nav__link {
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.report-nav__text {
+  line-height: 1.5;
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: $purple;
+  }
+}
+
+.report-nav__header {
+  color: $purple;
+  font-size: 14px;
+  font-weight: $font-weight-bold;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.report-nav__title {
+  color: $purple;
+  font-size: 16px;
+  margin: 0;
+}
+
+.report-nav__arrow {
+  color: $purple;
+  font-size: 60px;
+  margin: 0 10px;
+}
+
+.report-nav__prev {
+  text-align: left;
+}
+
+.report-nav__next {
+  text-align: right;
+}

@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900|Roboto+Slab:300,400,700,900&display=swap');
+
+// TODO: clarify fonts
+
+$sans-serif-stack: 'Roboto', sans-serif;
+$serif-stack: 'Roboto Slab', serif;
+$font-weight-normal: 300;
+$font-weight-medium: 400;
+$font-weight-bold: 700;
+
+html {
+  font-family: $sans-serif-stack;
+  font-weight: $font-weight-normal;
+}
+
+p, a, ul {
+  color: $black;
+}
+
+strong, b {
+  font-family: inherit;
+  font-weight: $font-weight-bold;
+}
+
+em, i, .text--italic {
+  font-family: inherit;
+  font-style: italic;
+}
+
+h1, h2, h3, h4 {
+  font-weight: $font-weight-bold;
+  color: $purple;
+}
+
+h1 {
+  font-size: 50px;
+  margin: 0;
+  padding-top: 100px;
+}
+
+h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+a {
+  color: $aqua;
+  text-decoration: underline;
+  transition: $transition-default;
+  &:focus {
+    text-decoration: underline;
+  }
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.text--pink {
+  color: $pink
+}
+
+.text--blue {
+  color: $light-blue;
+}
+
+.text--gold {
+  color: $gold;
+}
+
+.text--bold {
+  font-weight: $font-weight-bold;
+}

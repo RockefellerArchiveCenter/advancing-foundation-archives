@@ -1,0 +1,26 @@
+<nav class="top-nav" role="navigation" aria-label="Main Navigation">
+  <div class="top-nav__mobile">
+    <button id="nav-toggle" aria-label="menu" aria-expanded="false"><i class="material-icons" aria-hidden="true">menu</i></button>
+  </div>
+
+  <div class="brand">
+    <a class="brand__text" href={{"/" | relative_url }} title="Home">
+      <span class="text--pink">Advancing</span><span classs="text--blue">Foundation</span><span class="text--gold">Archives</span>
+    </a>
+  </div>
+
+  <ul class="top-nav__list">
+    <li class="top-nav__item{% if page.url contains 'about' %} top-nav__item--active{% endif %}">
+      <a href={{"/about/" | relative_url }}>About</a>
+    </li>
+
+    <li class="top-nav__item{% if page.url contains 'report' %} top-nav__item--active{% endif %}">
+      <a href={{"/report/" | relative_url }}>Read the Report</a>
+    </li>
+
+    <li class="top-nav__item{% if page.url contains 'resources' %} top-nav__item--active{% endif %}">
+      <a href={{"/resources/" | relative_url }}>Resources</a>
+    </li>
+
+  </ul>
+</nav>

@@ -1,0 +1,127 @@
+.report {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+}
+
+.report__title {
+  border-bottom: 3px solid $purple;
+  font-size: 50px;
+  font-weight: $font-weight-medium;
+  padding-top: 0;
+  line-height: 64px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+.report__section {
+  color: $aqua;
+  font-size: 62px;
+  font-weight: $font-weight-medium;
+  line-height: 80px;
+  margin-top: 80px;
+  margin-bottom: 0;
+}
+
+.report__lede {
+  color: $purple;
+  font-family: $sans-serif-stack;
+  font-size: 21px;
+  font-weight: $font-weight-medium;
+  line-height: 34px;
+}
+
+.report__text {
+  font-family: $serif-stack;
+  max-width: 822px;
+  padding-right: 120px;
+  font-size: 18px;
+  line-height: 34px;
+}
+
+
+.report__dedication {
+  font-family: $serif-stack;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 18px;
+  margin-top: 100px;
+}
+
+.report__committee {
+  margin-top: 30px;
+}
+
+.report__committee-title {
+  color: $black;
+  font-size: 18px;
+}
+
+.report__committee-member {
+  font-size: 14px;
+  line-height: 12px;
+  margin-top: 20px;
+}
+
+.report__committee-member-name {
+  font-weight: $font-weight-bold;
+}
+
+.foreword__title {
+  font-size: 32px;
+  padding-top: 39px;
+}
+
+.foreword__text {
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.report__name {
+  color: $purple;
+  font-weight: $font-weight-bold;
+}
+
+.report__section-title {
+  color: $purple;
+  font-family: $serif-stack;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+}
+
+.report__footnotes {
+  border-top: 1px solid $black;
+  font-size: 12px;
+  line-height: 15px;
+  list-style: none;
+  margin-top: 50px;
+  padding-left: 0;
+  padding-top: 20px;
+}
+
+.report__quote {
+  border-left: 3px solid $purple;
+  padding-left: 40px;
+  & > p {
+    color: $purple;
+    font-style: italic;
+  }
+}
+
+.report__sidebar {
+  background: $light-blue;
+  font-family: $sans-serif-stack;
+  padding: 40px;
+  margin: 40px 0;
+}
+
+.report__sidebar-title {
+  font-size: 22px;
+}
+
+.report__pullquote {
+  color: $purple;
+  font-size: 32px;
+  font-weight: $font-weight-bold;
+  line-height: 44px;
+}

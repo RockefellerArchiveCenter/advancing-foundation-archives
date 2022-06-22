@@ -1,0 +1,45 @@
+<!-- TODO: active class for items -->
+
+<nav class="report-toc" role="navigation" aria-label="Report Navigation">
+  <h2 class="report-toc__title">Table of Contents</h2>
+  <ul class="report-toc__list">
+    <li class="report-toc__list-item{% if page.url contains 'foreword' %} report-toc__list-item--active{% endif %}">
+      <a href="/report/foreword/">Foreword</a>
+    </li>
+    <li class="report-toc__list-item{% if page.url contains 'introduction' %} report-toc__list-item--active{% endif %}">
+      <a href="/report/introduction/">1 Introduction</a>
+    </li>
+    <li class="report-toc__list-item{% if page.url contains 'opening-remarks' %} report-toc__list-item--active{% endif %}">
+      <a href="/report/opening-remarks/">2 Opening Remarks</a>
+    </li>
+    <li class="report-toc__list-item{% if page.url contains 'perspectives-of-foundation-stakeholders' %} report-toc__list-item--active{% endif %}">
+      <a href="/report/perspectives-of-foundation-stakeholders/">3 Perspectives of Foundation Stakeholders</a>
+    </li>
+    <li class="report-toc__list-item{% if page.url contains 'motivating-issues-and-events' %} report-toc__list-item--active{% endif %}">
+      <a href="/report/motivating-issues-and-events/">4 Motivating Issues and Events</a>
+    </li>
+    <li class="report-toc__list-item{% if page.url contains 'records-management-and-archives' %} report-toc__list-item--active{% endif %}">
+      <a href="/report/records-management-and-archives/">5 Records Management and Archives</a>
+    </li>
+    <li class="report-toc__list-item{% if page.url contains 'internal-access-and-storytelling' %} report-toc__list-item--active{% endif %}">
+      <a href="/report/internal-access-and-storytelling/">6 Internal Access and Storytelling</a>
+    </li>
+    <li class="report-toc__list-item{% if page.url contains 'public-access-and-storytelling' %} report-toc__list-item--active{% endif %}">
+      <a href="/report/public-access-and-storytelling/">7 Public Access and Storytelling</a>
+    </li>
+    <li class="report-toc__list-item{% if page.url contains 'closing-remarks' %} report-toc__list-item--active{% endif %}">
+      <a href="/report/closing-remarks/">8 Closing Remarks</a>
+    </li>
+  </ul>
+
+  <h2 class="report-toc__title">Appendices</h2>
+  <ul class="report-toc__list">
+    <li class="report-toc__list-item{% if page.url contains 'appendix-a' %} report-toc__list-item--active{% endif %}">
+      <a href="/report/appendix-a/">A Sessions, Presenters and Panelists</a>
+    </li>
+    <li class="report-toc__list-item{% if page.url contains 'appendix-b' %} report-toc__list-item--active{% endif %}">
+      <a href="/report/appendix-b/">B Resources for Further Exploration</a>
+    </li>
+
+  </ul>
+</nav>

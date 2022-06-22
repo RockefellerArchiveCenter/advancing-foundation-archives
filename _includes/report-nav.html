@@ -1,0 +1,26 @@
+<div class="report-nav">
+
+  <div class="report-nav__prev">
+    {% if page.prev %}
+    <a href="/report/{{page.prev.link}}/" class="report-nav__link">
+      <p class="report-nav__arrow">⟨</p>
+      <div class="report-nav__text">
+        <p class="report-nav__header">Previous</p>
+        <p class="report-nav__title">{{page.prev.title}}</p>
+      </div>
+    </a>
+    {% endif %}
+  </div>
+
+  <div class="report-nav__next">
+    {% if page.next %}
+    <a href="/report/{{page.next.link}}/" class="report-nav__link">
+      <div class="report-nav__text">
+        <p class="report-nav__header">Next</p>
+        <p class="report-nav__title">{{page.next.title}}</p>
+      </div>
+      <p class="report-nav__arrow">⟩</p>
+    </a>
+    {% endif %}
+  </div>
+</div>

@@ -1,0 +1,39 @@
+.report-toc {
+  background: $light-purple;
+  box-sizing: border-box;
+  padding: 50px;
+  position: sticky;
+  top: 0;
+  width: 435px;
+}
+
+.report-toc__title {
+  font-size: 20px;
+  font-weight: $font-weight-medium;
+}
+
+.report-toc__list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.report-toc__list-item {
+  margin-bottom: 14px;
+}
+
+.report-toc__list-item > a {
+  color: $purple;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.report-toc__list-item--active  {
+  font-weight: $font-weight-bold;
+  &:before {
+    color: $purple;
+    content: "—";
+    margin-right: 5px;
+  }
+}

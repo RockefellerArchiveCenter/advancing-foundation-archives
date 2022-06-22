@@ -1,0 +1,13 @@
+.home {
+  background: $light-gray;
+  padding: 40px 100px 100px 100px;
+  & > h1 {
+    padding-top: 0;
+  }
+}
+
+.home__cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}

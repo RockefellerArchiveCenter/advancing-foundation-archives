@@ -1,0 +1,57 @@
+.report-cover {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.report-cover__wrapper {
+  margin: 100px 120px;
+}
+
+.report-cover__subtitle {
+  color: $black;
+  font-size: 16px;
+  font-weight: $font-weight-medium;
+}
+
+.report-cover__title {
+  color: $black;
+  font-size: 32px;
+  padding-top: 0;
+}
+
+.report-cover__text h3 {
+  color: $black;
+  font-size: 15px;
+  margin-top: 22px;
+  margin-bottom: 4px;
+}
+
+.report-cover__text p {
+  margin: 0;
+}
+
+p.report-cover__copyright {
+  margin: 22px 0;
+}
+
+.report-cover__buttons {
+  margin-top: 40px;
+  display: flex;
+}
+
+.report-cover__button {
+  background-color: $aqua;
+  border-radius: 4px;
+  color: $white;
+  font-weight: $font-weight-medium;
+  padding: 13px 18px 17px 18px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  margin-right: 10px;
+}
+
+.report-cover__image {
+  margin-right: 80px;
+  width: 400px;
+}
