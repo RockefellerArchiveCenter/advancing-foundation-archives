@@ -1,39 +1,19 @@
 (function ($) {
-  const mobileSmall = window.matchMedia('(max-width: 580px)')
-  // Side navigation toggle
-  $(function () {
-    $('.rac-side-nav .nav-toggle').on('click', function (e) {
-      if ($(this).siblings('.side-nav').is(':visible')) {
-        $(this).html('Open Page Menu')
-        $(this).attr('aria-expanded', 'false')
-      } else {
-        $(this).html('Close Page Menu')
-        $(this).attr('aria-expanded', 'true')
-      }
-      $(this).siblings('.side-nav').toggle()
-      e.stopPropagation()
-    })
-    $('html').click(function () {
-      if (mobileSmall.matches) {
-        $('.side-nav').hide()
-        $('.side-nav').siblings('.nav-toggle').html('Open Page Menu')
-      } else {
-        // allow keyboard focus
-        $('.side-nav button').attr('tabindex', '0')
-      }
-    })
-  })
-
-  // Main navigation toggle
-  document.querySelector('#nav-toggle').addEventListener('click', function () {
-    this.classList.toggle('active')
+  // Report table of contents toggle
+  $('#toc-toggle').on('click', function () {
     $(this).attr('aria-expanded', function (i, attr) {
       return attr === 'true' ? 'false' : 'true'
     })
+    this.classList.toggle('open')
+    document.querySelector('.report-toc__list-wrapper').classList.toggle('open')
   })
 
-  $('#nav-toggle').click(function () {
-    $('nav .list').toggle()
-    $('nav .header-social-icons').toggle()
+  // Main navigation toggle
+  $('#nav-toggle').on('click', function () {
+    $(this).attr('aria-expanded', function (i, attr) {
+      return attr === 'true' ? 'false' : 'true'
+    })
+    this.classList.toggle('open')
+    document.querySelector('.top-nav__list').classList.toggle('open')
   })
 })(jQuery)
