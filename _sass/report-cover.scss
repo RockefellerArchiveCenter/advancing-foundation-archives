@@ -1,20 +1,26 @@
 .report-cover {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column-reverse;
+  @include lg-up {
+    flex-direction: row-reverse;
+  }
 }
 
 .report-cover__wrapper {
-  margin: 100px 120px;
+  margin: 20px;
+  @include lg-up {
+    margin: 100px 120px;
+  }
 }
 
 .report-cover__subtitle {
-  color: $black;
+  color: $dark-gray;
   font-size: 16px;
   font-weight: $font-weight-medium;
 }
 
 .report-cover__title {
-  color: $black;
+  color: $dark-gray;
   font-size: 32px;
   padding-top: 0;
 }
@@ -36,10 +42,14 @@ p.report-cover__copyright {
 
 .report-cover__buttons {
   margin-top: 40px;
-  display: flex;
+  display: block;
+  @include lg-up {
+    display: flex;
+  }
 }
 
 .report-cover__button {
+  display: inline-block;
   background-color: $aqua;
   border-radius: 4px;
   color: $white;
@@ -49,9 +59,13 @@ p.report-cover__copyright {
   cursor: pointer;
   border: none;
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .report-cover__image {
   margin-right: 80px;
-  width: 400px;
+  width: 100%;
+  @include lg-up {
+    width: 400px;
+  }
 }

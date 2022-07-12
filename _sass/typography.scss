@@ -33,22 +33,22 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 42px;
   margin: 0;
-  padding-top: 100px;
+  padding-top: 30px;
+  @include lg-up {
+    font-size: 50px;
+    padding-top: 100px;
+  }
 }
 
 h2 {
-  font-size: 24px;
+  font-family: $sans-serif-stack;
+  font-size: 22px;
   text-transform: uppercase;
-}
-
-h3 {
-
-}
-
-h4 {
-
+  @include lg-up {
+    font-size: 24px;
+  }
 }
 
 a {

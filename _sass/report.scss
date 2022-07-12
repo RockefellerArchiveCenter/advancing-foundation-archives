@@ -1,51 +1,72 @@
 .report {
   align-items: flex-start;
-  display: flex;
+  display: unset;
   justify-content: space-between;
+  @include lg-up {
+    display: flex;
+  }
 }
 
 .report__title {
   border-bottom: 3px solid $purple;
-  font-size: 50px;
+  font-size: 42px;
   font-weight: $font-weight-medium;
   padding-top: 0;
-  line-height: 64px;
+  line-height: 1.3;
   margin-bottom: 30px;
   padding-bottom: 30px;
+  @include lg-up {
+    font-size: 50px;
+  }
 }
 
 .report__section {
   color: $aqua;
-  font-size: 62px;
+  font-size: 50px;
   font-weight: $font-weight-medium;
-  line-height: 80px;
-  margin-top: 80px;
+  line-height: 1.3;
+  margin-top: 30px;
   margin-bottom: 0;
+  @include lg-up {
+    font-size: 62px;
+    margin-top: 80px;
+  }
 }
 
 .report__lede {
   color: $purple;
   font-family: $sans-serif-stack;
-  font-size: 21px;
+  font-size: 18px;
   font-weight: $font-weight-medium;
-  line-height: 34px;
+  line-height: 1.6;
+  @include lg-up {
+    font-size: 21px;
+  }
 }
 
 .report__text {
   font-family: $serif-stack;
-  max-width: 822px;
-  padding-right: 120px;
-  font-size: 18px;
-  line-height: 34px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 16px;
+  line-height: 1.75;
+  @include lg-up {
+    font-size: 18px;
+    padding-left: 60px;
+    padding-right: 120px;
+    width: calc(100% - 435px);
+  }
 }
-
 
 .report__dedication {
   font-family: $serif-stack;
   font-size: 14px;
   font-style: italic;
   line-height: 18px;
-  margin-top: 100px;
+  margin-top: 40px;
+  @include lg-up {
+    margin-top: 100px;
+  }
 }
 
 .report__committee {
@@ -54,10 +75,12 @@
 
 .report__committee-title {
   color: $black;
+  font-family: $sans-serif-stack;
   font-size: 18px;
 }
 
 .report__committee-member {
+  font-family: $sans-serif-stack;
   font-size: 14px;
   line-height: 12px;
   margin-top: 20px;
@@ -68,13 +91,16 @@
 }
 
 .foreword__title {
+  font-family: $sans-serif-stack;
   font-size: 32px;
+  line-height: 1.3;
   padding-top: 39px;
 }
 
 .foreword__text {
+  font-family: $sans-serif-stack;
   font-size: 15px;
-  line-height: 24px;
+  line-height: 1.6;
 }
 
 .report__name {
@@ -101,18 +127,28 @@
 
 .report__quote {
   border-left: 3px solid $purple;
-  padding-left: 40px;
+  padding-left: 20px;
   & > p {
     color: $purple;
     font-style: italic;
+  }
+  @include lg-up {
+    padding-left: 40px;
   }
 }
 
 .report__sidebar {
   background: $light-blue;
   font-family: $sans-serif-stack;
-  padding: 40px;
-  margin: 40px 0;
+  padding: 30px;
+  margin: 30px 0;
+  & p, a {
+    color: $purple;
+  }
+  @include lg-up {
+    padding: 40px;
+    margin: 40px 0;
+  }
 }
 
 .report__sidebar-title {

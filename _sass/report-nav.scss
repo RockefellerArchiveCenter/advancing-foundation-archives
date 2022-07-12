@@ -2,21 +2,27 @@
   border-top: 3px solid $purple;
   display: flex;
   justify-content: space-between;
-  margin-top: 60px;
-  padding-top: 60px;
-  padding-bottom: 90px;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 80px;
+  @include lg-up {
+    margin-top: 60px;
+    padding-top: 60px;
+    padding-bottom: 90px;
+  }
 }
 
 .report-nav__link {
+  align-items: center;
   text-decoration: none;
   display: flex;
-  flex-wrap: wrap;
   &:hover {
     text-decoration: none;
   }
 }
 
 .report-nav__text {
+  font-family: $sans-serif-stack;
   line-height: 1.5;
   &:hover {
     text-decoration: underline;
@@ -46,8 +52,10 @@
 
 .report-nav__prev {
   text-align: left;
+  max-width: 40%;
 }
 
 .report-nav__next {
   text-align: right;
+  max-width: 40%;
 }

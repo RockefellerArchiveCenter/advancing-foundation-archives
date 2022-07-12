@@ -1,4 +1,5 @@
 $transition-default: all 0.2s ease;
+$break-lg: 1024px;
 
 @mixin visually-hidden {
     clip: rect(1px, 1px, 1px, 1px);
@@ -14,5 +15,16 @@ $transition-default: all 0.2s ease;
       position: absolute;
       width: auto;
       z-index: 99;
+  }
+}
+
+@mixin lg-up {
+  @media screen and (min-width: $break-lg) { @content; }
+}
+
+.mobile-only  {
+  display: inherit;
+  @include lg-up {
+    display: none;
   }
 }

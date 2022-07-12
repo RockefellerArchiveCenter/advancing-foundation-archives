@@ -1,8 +1,14 @@
-// TODO: responsive breakpoints and mixins
+html {
+  overflow-x: hidden;
+}
 
 .wrapper {
-  margin-right: 100px;
-  margin-left: 100px;
-  max-width: 850px;
-  min-height: 1000px;
+  margin-right: 30px;
+  margin-left: 30px;
+  @include lg-up {
+    margin-right: 100px;
+    margin-left: 100px;
+    max-width: 850px;
+    min-height: 1000px;
+  }
 }

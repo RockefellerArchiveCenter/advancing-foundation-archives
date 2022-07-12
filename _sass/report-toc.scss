@@ -1,15 +1,63 @@
 .report-toc {
   background: $light-purple;
+  box-shadow: 0 3px 3px $light-gray;
   box-sizing: border-box;
-  padding: 50px;
-  position: sticky;
+  padding: 10px 30px;
   top: 0;
-  width: 435px;
+  width: 100%;
+  @include lg-up {
+    padding: 50px;
+    position: sticky;
+    width: 435px;
+  }
 }
 
 .report-toc__title {
   font-size: 20px;
   font-weight: $font-weight-medium;
+}
+
+.report-toc__title--main {
+  display: none;
+  @include lg-up {
+    display: block;
+  }
+}
+
+.report-toc__title--mobile {
+  appearance: none;
+  background: none;
+  border: none;
+  color: $purple;
+  cursor: pointer;
+  font-family: $sans-serif-stack;
+  height: 68px;
+  padding: 0;
+  text-align: left;
+  text-transform: uppercase;
+  width: 100%;
+  @include lg-up {
+    display: none;
+  }
+  &:after {
+    content: '\2228';
+    font-weight: bold;
+    padding-left: 10px;
+    vertical-align: top;
+    &.open {
+      content: '\2227';
+    }
+  }
+}
+
+.report-toc__list-wrapper {
+  display: none;
+  @include lg-up {
+    display: block;
+  }
+  &.open {
+    display: block;
+  }
 }
 
 .report-toc__list {
@@ -18,7 +66,12 @@
 }
 
 .report-toc__list-item {
-  margin-bottom: 14px;
+  font-size: 16px;
+  height: 48px;
+  @include lg-up {
+    height: unset;
+    margin-bottom: 14px;
+  }
 }
 
 .report-toc__list-item > a {
