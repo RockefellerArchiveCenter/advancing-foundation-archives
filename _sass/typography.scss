@@ -74,6 +74,18 @@ a {
   color: $gold;
 }
 
+.text--purple {
+  color: $purple;
+}
+
 .text--bold {
   font-weight: $font-weight-bold;
+}
+
+.text--nocase {
+  text-transform: none;
+}
+
+.hr--report {
+  border-top: 3px solid $purple;
 }
