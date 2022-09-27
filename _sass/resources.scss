@@ -13,5 +13,8 @@
   padding-bottom: 12px;
   & > a {
     font-weight: $font-weight-bold;
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
