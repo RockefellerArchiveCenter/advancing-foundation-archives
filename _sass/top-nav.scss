@@ -34,15 +34,15 @@
   right: 0;
   list-style: none;
   margin: 0;
-  opacity: 0;
   padding: 40px 55px;
   position: absolute;
   transition: $transition-default;
   transform: translateX(280px);
   width: 280px;
   z-index: -999;
+  display: none;
   &.open {
-    opacity: 1;
+    display: block;
     z-index: 1000;
     transform: translateX(0px);
   }

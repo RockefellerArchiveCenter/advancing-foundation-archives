@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900|Roboto+Slab:300,400,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900|Roboto+Slab:300,400,700&display=swap');
 
 $sans-serif-stack: 'Roboto', sans-serif;
 $serif-stack: 'Roboto Slab', serif;
@@ -68,6 +68,10 @@ a {
 
 .text--blue {
   color: $light-blue;
+}
+
+.text--light-aqua {
+  color: $light-aqua;
 }
 
 .text--gold {
