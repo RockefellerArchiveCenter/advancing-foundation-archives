@@ -1,5 +1,6 @@
 .skip-link {
   clip: rect(1px, 1px, 1px, 1px);
+  color: $black;
   font-weight: $font-weight-bold;
   height: 1px;
   overflow: hidden;
@@ -13,7 +14,7 @@
     position: absolute;
     width: auto;
     z-index: 99;
-    background: $light-blue;
+    background-color: $light-blue;
     margin: 5px;
     padding: 10px 16px;
   }
