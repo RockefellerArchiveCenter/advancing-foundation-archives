@@ -1,7 +1,7 @@
 language: ruby
 cache: bundler
 rvm:
-  - 3.3.3
+  - 2.6.3
 
 script: ./script/cibuild
 
