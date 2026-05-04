@@ -79,6 +79,7 @@
 
 .brand {
   padding: 24px 20px;
+  flex-wrap: wrap;
   @include lg-up {
     padding: 30px 36px;
   }
@@ -86,6 +87,7 @@
 
 .brand__text {
   display: flex;
+  flex-wrap: wrap;
   font-size: 16px;
   font-weight: 900;
   text-decoration: none;
@@ -93,6 +95,7 @@
     text-decoration: none;
   }
   @include lg-up {
+    flex-wrap: nowrap;
     font-size: 36px;
   }
 }
