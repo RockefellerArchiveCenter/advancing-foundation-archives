@@ -1,10 +1,14 @@
-<nav class="top-nav" role="navigation" aria-label="Main Navigation">
+<nav class="top-nav" aria-label="Main">
   <div class="brand">
     <a class="brand__text" href={{"/" | relative_url }} title="Home">
       <span class="text--pink">Advancing</span>
       <span class="text--light-aqua">Foundation</span>
       <span class="text--gold">Archives</span>
     </a>
+  </div>
+
+  <div class="top-nav__mobile">
+    <button id="nav-toggle" aria-label="menu" aria-expanded="false"><span aria-hidden="true">☰</span></button>
   </div>
 
   <ul class="top-nav__list">
@@ -19,10 +23,5 @@
     <li class="top-nav__item{% if page.url contains 'resources' %} top-nav__item--active{% endif %}">
       <a href={{"/resources/" | relative_url }}>Resources</a>
     </li>
-
   </ul>
-
-  <div class="top-nav__mobile">
-    <button id="nav-toggle" aria-label="menu" aria-expanded="false"><span aria-hidden="true">☰</span></button>
-  </div>
-</nav>
+  </nav>
