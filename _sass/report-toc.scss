@@ -1,5 +1,14 @@
 @use 'abstracts' as abs;
 
+.report-toc__skip-link {
+  display: none;
+
+  @include abs.lg-up {
+    display: block;
+    top: 0;
+  }
+}
+
 .report-toc {
   background: abs.$light-purple;
   box-shadow: 0 3px 3px abs.$light-gray;
