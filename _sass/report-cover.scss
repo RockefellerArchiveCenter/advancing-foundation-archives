@@ -1,32 +1,36 @@
+@use 'abstracts' as abs;
+
 .report-cover {
   display: flex;
   flex-direction: column-reverse;
-  @include lg-up {
+
+  @include abs.lg-up {
     flex-direction: row-reverse;
   }
 }
 
 .report-cover__wrapper {
   margin: 20px;
-  @include lg-up {
+
+  @include abs.lg-up {
     margin: 100px 120px;
   }
 }
 
 .report-cover__subtitle {
-  color: $dark-gray;
+  color: abs.$dark-gray;
   font-size: 16px;
-  font-weight: $font-weight-medium;
+  font-weight: abs.$font-weight-medium;
 }
 
 .report-cover__title {
-  color: $dark-gray;
+  color: abs.$dark-gray;
   font-size: 32px;
   padding-top: 0;
 }
 
 .report-cover__text h3 {
-  color: $black;
+  color: abs.$black;
   font-size: 15px;
   margin-top: 22px;
   margin-bottom: 4px;
@@ -43,17 +47,18 @@ p.report-cover__copyright {
 .report-cover__buttons {
   margin-top: 40px;
   display: block;
-  @include lg-up {
+
+  @include abs.lg-up {
     display: flex;
   }
 }
 
 .report-cover__button {
   display: inline-block;
-  background-color: $aqua;
+  background-color: abs.$aqua;
   border-radius: 4px;
-  color: $white;
-  font-weight: $font-weight-medium;
+  color: abs.$white;
+  font-weight: abs.$font-weight-medium;
   padding: 13px 18px 17px 18px;
   text-decoration: none;
   cursor: pointer;
@@ -65,7 +70,8 @@ p.report-cover__copyright {
 .report-cover__image {
   margin-right: 80px;
   width: 100%;
-  @include lg-up {
+
+  @include abs.lg-up {
     width: 400px;
   }
 }

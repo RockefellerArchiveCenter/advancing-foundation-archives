@@ -24,6 +24,7 @@ $break-lg: 1024px;
 
 .mobile-only  {
   display: inherit;
+
   @include lg-up {
     display: none;
   }

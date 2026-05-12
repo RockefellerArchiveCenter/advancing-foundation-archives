@@ -2,24 +2,23 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-// Reset
-@import "normalize";
+@charset 'UTF-8';
 
-// Utilities
-@import "utilities";
-@import "colors";
-@import "typography";
-@import "layout";
+// Reset
+@use '../_sass/vendor/normalize';
+
+// Abstracts
+@use '../_sass/abstracts';
 
 // Components
-@import "card";
-@import "footer";
-@import "home";
-@import "page";
-@import "report";
-@import "report-cover";
-@import "report-nav";
-@import "report-toc";
-@import "resources";
-@import "skip-link";
-@import "top-nav";
+@use '../_sass/card';
+@use '../_sass/footer';
+@use '../_sass/home';
+@use '../_sass/page';
+@use '../_sass/report';
+@use '../_sass/report-cover';
+@use '../_sass/report-nav';
+@use '../_sass/report-toc';
+@use '../_sass/resources';
+@use '../_sass/skip-link';
+@use '../_sass/top-nav';

@@ -1,11 +1,14 @@
+@use 'abstracts' as abs;
+
 .report-nav {
-  border-top: 3px solid $purple;
+  border-top: 3px solid abs.$purple;
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
   padding-top: 20px;
   padding-bottom: 80px;
-  @include lg-up {
+
+  @include abs.lg-up {
     margin-top: 60px;
     padding-top: 60px;
     padding-bottom: 90px;
@@ -22,30 +25,30 @@
 }
 
 .report-nav__text {
-  font-family: $sans-serif-stack;
+  font-family: abs.$sans-serif-stack;
   line-height: 1.5;
   &:hover {
     text-decoration: underline;
-    text-decoration-color: $purple;
+    text-decoration-color: abs.$purple;
   }
 }
 
 .report-nav__header {
-  color: $purple;
+  color: abs.$purple;
   font-size: 14px;
-  font-weight: $font-weight-bold;
+  font-weight: abs.$font-weight-bold;
   margin: 0;
   text-transform: uppercase;
 }
 
 .report-nav__title {
-  color: $purple;
+  color: abs.$purple;
   font-size: 16px;
   margin: 0;
 }
 
 .report-nav__arrow {
-  color: $purple;
+  color: abs.$purple;
   font-size: 60px;
   margin: 0 10px;
 }
