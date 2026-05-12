@@ -1,6 +1,7 @@
 @use 'abstracts' as abs;
 
 .top-nav {
+  align-items: center;
   color: abs.$white;
   display: flex;
   background-color: abs.$dark-purple;
@@ -38,7 +39,7 @@
   top: 60px;
   right: 0;
   list-style: none;
-  margin: 0 0 0 auto;
+  margin: 0;
   padding: 40px 55px;
   position: absolute;
   overflow-y: auto;
@@ -57,7 +58,7 @@
     display: flex;
     height: unset;
     list-style: none;
-    margin: 39px 0 0 auto;
+    margin: 0 0 0 auto;
     opacity: 1;
     padding: 0;
     position: unset;
@@ -69,6 +70,11 @@
 
 .top-nav__item {
   margin-bottom: 24px;
+
+  @include abs.lg-up {
+    margin-bottom: 0;
+    padding: 4px;
+  }
 }
 
 .top-nav__item > a {
