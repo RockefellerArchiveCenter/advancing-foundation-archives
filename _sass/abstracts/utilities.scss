@@ -1,5 +1,5 @@
 $transition-default: all 0.2s ease;
-$break-lg: 1024px;
+$break-lg: 64em; // 1024px
 
 @mixin visually-hidden {
     clip: rect(1px, 1px, 1px, 1px);
