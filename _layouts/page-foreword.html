@@ -2,14 +2,13 @@
 layout: default
 ---
 
-<div class="report">
-{% include report-toc.html %}
+<main id="main">
+  <div class="report">
+    {% include report-toc.html %}
 
-  <div class="report__text">
-    <main id="main">
-      {{content}}
-    </main>
-
-    {% include report-nav.html %}
+    <div id="report-text" class="report__text">
+        {{content}}
+        {% include report-nav.html %}
+    </div>
   </div>
-</div>
+</main>
