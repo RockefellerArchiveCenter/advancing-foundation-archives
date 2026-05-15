@@ -1,11 +1,25 @@
+@use 'abstracts' as abs;
+
+.report-toc__skip-link {
+  display: none;
+
+  @include abs.lg-up {
+    display: block;
+    top: 0;
+  }
+}
+
 .report-toc {
-  background: $light-purple;
-  box-shadow: 0 3px 3px $light-gray;
+  background: abs.$light-purple;
+  box-shadow: 0 3px 3px abs.$light-gray;
   box-sizing: border-box;
+  max-height: 100vh;
+  overflow-y: auto;
   padding: 10px 30px;
   top: 0;
   width: 100%;
-  @include lg-up {
+
+  @include abs.lg-up {
     padding: 50px;
     position: sticky;
     width: 435px;
@@ -14,12 +28,13 @@
 
 .report-toc__title {
   font-size: 20px;
-  font-weight: $font-weight-medium;
+  font-weight: abs.$font-weight-medium;
 }
 
 .report-toc__title--main {
   display: none;
-  @include lg-up {
+
+  @include abs.lg-up {
     display: block;
   }
 }
@@ -28,15 +43,16 @@
   appearance: none;
   background: none;
   border: none;
-  color: $purple;
+  color: abs.$purple;
   cursor: pointer;
-  font-family: $sans-serif-stack;
+  font-family: abs.$sans-serif-stack;
   height: 68px;
   padding: 0;
   text-align: left;
   text-transform: uppercase;
   width: 100%;
-  @include lg-up {
+
+  @include abs.lg-up {
     display: none;
   }
   &:after {
@@ -52,7 +68,8 @@
 
 .report-toc__list-wrapper {
   display: none;
-  @include lg-up {
+
+  @include abs.lg-up {
     display: block;
   }
   &.open {
@@ -68,14 +85,15 @@
 .report-toc__list-item {
   font-size: 16px;
   height: 48px;
-  @include lg-up {
+
+  @include abs.lg-up {
     height: unset;
     margin-bottom: 14px;
   }
 }
 
 .report-toc__list-item > a {
-  color: $purple;
+  color: abs.$purple;
   text-decoration: none;
   &:hover {
     text-decoration: underline;
@@ -83,9 +101,9 @@
 }
 
 .report-toc__list-item--active  {
-  font-weight: $font-weight-bold;
+  font-weight: abs.$font-weight-bold;
   &:before {
-    color: $purple;
+    color: abs.$purple;
     content: "—";
     margin-right: 5px;
   }

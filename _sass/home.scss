@@ -1,7 +1,10 @@
+@use 'abstracts' as abs;
+
 .home {
-  background: $light-gray;
+  background: abs.$light-gray;
   padding: 20px;
-  @include lg-up {
+
+  @include abs.lg-up {
     padding: 40px 100px 100px 100px;
   }
   & > h1 {
@@ -10,9 +13,10 @@
 }
 
 .home__cards {
-  @include lg-up {
-    display: flex;
-  }
   justify-content: space-between;
   margin-top: 20px;
+
+  @include abs.lg-up {
+    display: flex;
+  }
 }

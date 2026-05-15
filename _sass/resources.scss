@@ -1,10 +1,13 @@
+@use 'abstracts' as abs;
+
 .resources__list {
-  font-family: $serif-stack;
+  font-family: abs.$serif-stack;
   font-size: 16px;
-  font-weight: $font-weight-normal;
+  font-weight: abs.$font-weight-normal;
   list-style: none;
   padding: 0;
-  @include lg-up {
+
+  @include abs.lg-up {
     font-size: 19px;
   }
 }
@@ -12,7 +15,7 @@
 .resources__list-item {
   padding-bottom: 12px;
   & > a {
-    font-weight: $font-weight-bold;
+    font-weight: abs.$font-weight-bold;
     &:hover {
       text-decoration: none;
     }

@@ -1,5 +1,7 @@
+@use 'abstracts' as abs;
+
 .footer {
-  background-color: $dark-gray;
+  background-color: abs.$dark-gray;
   height: 40px;
   width: 100%;
   display: flex;
@@ -8,6 +10,6 @@
 }
 
 .footer__text {
-  color: $white;
+  color: abs.$white;
   font-size: 12px;
 }

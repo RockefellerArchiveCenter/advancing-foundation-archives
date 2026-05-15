@@ -1,16 +1,19 @@
+@use 'abstracts' as abs;
+
 .card-wrapper {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  @include lg-up {
+
+  @include abs.lg-up {
     width: calc(50% - 10px);
   }
 }
 
 .card {
-  background: $white;
+  background: abs.$white;
   box-sizing: border-box;
-  font-family: $sans-serif-stack;
+  font-family: abs.$sans-serif-stack;
   margin-bottom: 20px;
   padding: 50px;
   border-radius: 0 0 50px 0;
@@ -18,7 +21,8 @@
 
 .card--flex-lg {
   width: 100%;
-  @include lg-up {
+
+  @include abs.lg-up {
     display: flex;
   }
 }
@@ -28,7 +32,8 @@
   font-size: 25px;
   line-height: 1.3;
   margin-top: 0;
-  @include lg-up {
+
+  @include abs.lg-up {
     font-size: 30px;
   }
 }
@@ -36,15 +41,16 @@
 .card__text {
   font-size: 18px;
   line-height: 1.3;
-  @include lg-up {
+
+  @include abs.lg-up {
     font-size: 20px;
   }
 }
 
 .card__link {
-  color: $aqua;
+  color: abs.$aqua;
   font-size: 18px;
-  font-weight: $font-weight-medium;
+  font-weight: abs.$font-weight-medium;
   line-height: 1.4;
   text-transform: uppercase;
   text-decoration: none;
@@ -52,7 +58,8 @@
     content: '>';
     margin-left: 10px;
   }
-  @include lg-up {
+
+  @include abs.lg-up {
     font-size: 20px;
   }
 }
