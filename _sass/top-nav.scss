@@ -1,33 +1,39 @@
+@use 'abstracts' as abs;
+
 .top-nav {
-  color: $white;
+  align-items: center;
+  color: abs.$white;
   display: flex;
-  background-color: $dark-purple;
-  height: 60px;
-  justify-content: space-between;
+  background-color: abs.$dark-purple;
+  justify-content: flex-start;
+  min-height: 60px;
   text-transform: uppercase;
   width: 100%;
-  @include lg-up {
-    height: 100px;
+
+  @include abs.lg-up {
+    min-height: 100px;
   }
 }
 
 .top-nav__mobile {
   display: block;
-  padding: 24px 20px;
-  @include lg-up {
+  padding: 15px 10px;
+  margin-left: auto;
+
+  @include abs.lg-up {
     display: none;
   }
   & > button {
     background: none;
     cursor: pointer;
-    color: $white;
+    color: abs.$white;
     border: none;
-    font-size: 15px;
+    font-size: 24px;
   }
 }
 
 .top-nav__list {
-  background: $dark-purple;
+  background: abs.$dark-purple;
   box-sizing: border-box;
   height: calc(100vh - 60px);
   top: 60px;
@@ -36,7 +42,8 @@
   margin: 0;
   padding: 40px 55px;
   position: absolute;
-  transition: $transition-default;
+  overflow-y: auto;
+  transition: abs.$transition-default;
   transform: translateX(280px);
   width: 280px;
   z-index: -999;
@@ -46,11 +53,12 @@
     z-index: 1000;
     transform: translateX(0px);
   }
-  @include lg-up {
+
+  @include abs.lg-up {
     display: flex;
     height: unset;
     list-style: none;
-    margin: 39px 0 0 0;
+    margin: 0 0 0 auto;
     opacity: 1;
     padding: 0;
     position: unset;
@@ -62,25 +70,32 @@
 
 .top-nav__item {
   margin-bottom: 24px;
+
+  @include abs.lg-up {
+    margin-bottom: 0;
+    padding: 4px;
+  }
 }
 
 .top-nav__item > a {
-  color: $white;
+  color: abs.$white;
   text-decoration: none;
   letter-spacing: 2px;
-  @include lg-up {
+
+  @include abs.lg-up {
     margin-right: 40px;
   }
 }
 
 .top-nav__item--active a {
-  font-weight: $font-weight-bold;
+  font-weight: abs.$font-weight-bold;
 }
 
 .brand {
   padding: 24px 20px;
   flex-wrap: wrap;
-  @include lg-up {
+
+  @include abs.lg-up {
     padding: 30px 36px;
   }
 }
@@ -89,13 +104,13 @@
   display: flex;
   flex-wrap: wrap;
   font-size: 16px;
-  font-weight: 900;
+  font-weight: abs.$font-weight-black;
   text-decoration: none;
   &:hover {
     text-decoration: none;
   }
-  @include lg-up {
-    flex-wrap: nowrap;
+
+  @include abs.lg-up {
     font-size: 36px;
   }
 }

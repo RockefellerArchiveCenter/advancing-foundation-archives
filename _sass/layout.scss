@@ -1,3 +1,5 @@
+@use 'abstracts' as abs;
+
 html {
   overflow-x: hidden;
 }
@@ -6,7 +8,8 @@ html {
   margin-right: 30px;
   margin-left: 30px;
   min-height: 100vh;
-  @include lg-up {
+
+  @include abs.lg-up {
     margin-right: 100px;
     margin-left: 100px;
     max-width: 850px;

@@ -1,8 +1,12 @@
-<nav class="report-toc" role="navigation" aria-label="Report Navigation">
+<nav class="report-toc" aria-label="Report Table of Contents">
+  <a href="#report-text" class="skip-link report-toc__skip-link">
+    Skip to report text
+  </a>
+
   <h2 class="report-toc__title report-toc__title--main">Table of Contents</h2>
   <button id="toc-toggle" class="report-toc__title report-toc__title--mobile">Table of Contents</button>
   <div class="report-toc__list-wrapper">
-    <ul class="report-toc__list">
+    <ol class="report-toc__list">
       <li class="report-toc__list-item{% if page.url contains 'foreword' %} report-toc__list-item--active{% endif %}">
         <a href="/report/foreword/">Foreword</a>
       </li>
@@ -30,10 +34,10 @@
       <li class="report-toc__list-item{% if page.url contains 'closing-remarks' %} report-toc__list-item--active{% endif %}">
         <a href="/report/closing-remarks/">8 Closing Remarks</a>
       </li>
-    </ul>
+    </ol>
 
     <h2 class="report-toc__title">Appendices</h2>
-    <ul class="report-toc__list">
+    <ol class="report-toc__list">
       <li class="report-toc__list-item{% if page.url contains 'appendix-a' %} report-toc__list-item--active{% endif %}">
         <a href="/report/appendix-a/">A Sessions, Presenters and Panelists</a>
       </li>
@@ -41,6 +45,6 @@
         <a href="/report/appendix-b/">B Resources for Further Exploration</a>
       </li>
 
-    </ul>
+    </ol>
   </div>
 </nav>

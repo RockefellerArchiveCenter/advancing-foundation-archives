@@ -1,57 +1,64 @@
+@use 'abstracts' as abs;
+
 .report {
   align-items: flex-start;
   display: unset;
   justify-content: space-between;
-  @include lg-up {
+
+  @include abs.lg-up {
     display: flex;
   }
 }
 
 .report__title {
-  border-bottom: 3px solid $purple;
-  font-family: $sans-serif-stack;
+  border-bottom: 3px solid abs.$purple;
+  font-family: abs.$sans-serif-stack;
   font-size: 42px;
-  font-weight: $font-weight-medium;
+  font-weight: abs.$font-weight-medium;
   padding-top: 0;
   line-height: 1.3;
   margin-bottom: 30px;
   padding-bottom: 30px;
-  @include lg-up {
+
+  @include abs.lg-up {
     font-size: 50px;
   }
 }
 
 .report__section {
-  color: $aqua;
+  color: abs.$aqua;
   font-size: 50px;
-  font-weight: $font-weight-medium;
+  font-weight: abs.$font-weight-medium;
   line-height: 1.3;
   margin-top: 30px;
   margin-bottom: 0;
-  @include lg-up {
+
+  @include abs.lg-up {
     font-size: 62px;
     margin-top: 80px;
   }
 }
 
 .report__lede {
-  color: $purple;
-  font-family: $sans-serif-stack;
+  color: abs.$purple;
+  font-family: abs.$sans-serif-stack;
   font-size: 18px;
-  font-weight: $font-weight-bold;
+  font-weight: abs.$font-weight-bold;
   line-height: 1.6;
-  @include lg-up {
+
+  @include abs.lg-up {
     font-size: 21px;
   }
 }
 
 .report__text {
-  font-family: $serif-stack;
+  font-family: abs.$serif-stack;
   padding-left: 30px;
   padding-right: 30px;
   font-size: 16px;
   line-height: 1.75;
-  @include lg-up {
+
+  @include abs.lg-up {
     font-size: 18px;
     padding-left: 60px;
     padding-right: 120px;
@@ -60,12 +67,13 @@
 }
 
 .report__dedication {
-  font-family: $serif-stack;
+  font-family: abs.$serif-stack;
   font-size: 14px;
   font-style: italic;
   line-height: 18px;
   margin-top: 40px;
-  @include lg-up {
+
+  @include abs.lg-up {
     margin-top: 100px;
   }
 }
@@ -75,49 +83,49 @@
 }
 
 .report__committee-title {
-  color: $black;
-  font-family: $sans-serif-stack;
+  color: abs.$black;
+  font-family: abs.$sans-serif-stack;
   font-size: 18px;
 }
 
 .report__committee-member {
-  font-family: $sans-serif-stack;
+  font-family: abs.$sans-serif-stack;
   font-size: 14px;
   line-height: 12px;
   margin-top: 20px;
 }
 
 .report__committee-member-name {
-  font-weight: $font-weight-bold;
+  font-weight: abs.$font-weight-bold;
 }
 
 .foreword__title {
-  font-family: $sans-serif-stack;
+  font-family: abs.$sans-serif-stack;
   font-size: 32px;
   line-height: 1.3;
   padding-top: 39px;
 }
 
 .foreword__text {
-  font-family: $sans-serif-stack;
+  font-family: abs.$sans-serif-stack;
   font-size: 15px;
   line-height: 1.6;
 }
 
 .report__name {
-  color: $purple;
-  font-weight: $font-weight-bold;
+  color: abs.$purple;
+  font-weight: abs.$font-weight-bold;
 }
 
 .report__section-title {
-  color: $purple;
-  font-family: $serif-stack;
-  font-weight: $font-weight-bold;
+  color: abs.$purple;
+  font-family: abs.$serif-stack;
+  font-weight: abs.$font-weight-bold;
   text-transform: uppercase;
 }
 
 .report__footnotes {
-  border-top: 1px solid $black;
+  border-top: 1px solid abs.$black;
   font-size: 12px;
   line-height: 15px;
   list-style: none;
@@ -127,27 +135,29 @@
 }
 
 .report__quote {
-  border-left: 3px solid $purple;
+  border-left: 3px solid abs.$purple;
   font-weight: bold;
   padding-left: 20px;
   & > p {
-    color: $purple;
+    color: abs.$purple;
     font-style: italic;
   }
-  @include lg-up {
+
+  @include abs.lg-up {
     padding-left: 40px;
   }
 }
 
 .report__sidebar {
-  background: $light-blue;
-  font-family: $sans-serif-stack;
+  background: abs.$light-blue;
+  font-family: abs.$sans-serif-stack;
   padding: 30px;
   margin: 30px 0;
   & p, a {
-    color: $purple;
+    color: abs.$purple;
   }
-  @include lg-up {
+
+  @include abs.lg-up {
     padding: 40px;
     margin: 40px 0;
   }
@@ -158,9 +168,9 @@
 }
 
 .report__pullquote {
-  color: $purple;
+  color: abs.$purple;
   font-size: 32px;
-  font-family: $sans-serif-stack;
-  font-weight: $font-weight-bold;
+  font-family: abs.$sans-serif-stack;
+  font-weight: abs.$font-weight-bold;
   line-height: 44px;
 }

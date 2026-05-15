@@ -1,6 +1,9 @@
+@use 'abstracts' as abs;
+
 .text--page {
   font-size: 18px;
-  @include lg-up {
+
+  @include abs.lg-up {
     font-size: 16px;
   }
   line-height: 1.6;
